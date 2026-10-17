@@ -1,0 +1,69 @@
+name: Generate Airtel Xstream EPG
+
+on:
+  schedule:
+    # Runs automatically every 24 hours at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows running manually from the GitHub Actions tab
+    inputs:
+      days:
+        description: 'Number of days to grab EPG for'
+        required: false
+        default: '2'
+      max_connections:
+        description: 'Concurrent connections limit'
+        required: false
+        default: '10'
+
+# Permissions required to commit and push back to repository
+permissions:
+  contents: write
+
+jobs:
+  epg-grab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Grab Airtel Xstream EPG
+        run: |
+          DAYS="${{ github.event.inputs.days || '2' }}"
+          MAX_CONN="${{ github.event.inputs.max_connections || '10' }}"
+          echo "Grabbing EPG for airtelxstream.in (days: $DAYS, maxConnections: $MAX_CONN)..."
+          npm run grab --- --sites=airtelxstream.in --days=$DAYS --maxConnections=$MAX_CONN --gzip --output=guide.xml
+
+      - name: Commit and push EPG output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Use -f because guide.xml and guide.xml.gz may be in .gitignore
+          git add -f guide.xml guide.xml.gz
+
+          if git diff --staged --quiet; then
+            echo "No changes in EPG files."
+          else
+            git commit -m "Update Airtel Xstream EPG [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
+
+      - name: Upload EPG as Artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: airtelxstream-epg
+          path: |
+            guide.xml
+            guide.xml.gz
+          retention-days: 7
