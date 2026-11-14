@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tataplay.com" site_id="1019" lang="en" xmltv_id="">7x Music</channel>
-  <channel site="tataplay.com" site_id="1166" lang="en" xmltv_id="Chithiram.in@SD">CHITHIRAM</channel>
   <channel site="tataplay.com" site_id="1340" lang="en" xmltv_id="ETVBalBharat.in@HD">ETV Bal Bharat HD</channel>
   <channel site="tataplay.com" site_id="1341" lang="en" xmltv_id="ETVCinema.in@HD">ETV Cinema HD</channel>
   <channel site="tataplay.com" site_id="1342" lang="en" xmltv_id="ETVPlus.in@HD">ETV Plus HD</channel>
-  <channel site="tataplay.com" site_id="227" lang="en" xmltv_id="FashionTV.in@SD">Fashion TV</channel>
   <channel site="tataplay.com" site_id="117" lang="en" xmltv_id="FoodFood.in@SD">Food Food</channel>
   <channel site="tataplay.com" site_id="1030" lang="en" xmltv_id="Foodxp.uk@SD">Food XP</channel>
   <channel site="tataplay.com" site_id="1499" lang="en" xmltv_id="GoldminesMovies.in@SD">Goldmines Movies</channel>
@@ -13,8 +10,6 @@
   <channel site="tataplay.com" site_id="965" lang="en" xmltv_id="ManoranjanGrand.in@SD">Manoranjan Grand</channel>
   <channel site="tataplay.com" site_id="406" lang="en" xmltv_id="MTV.in@HD">MTV HD</channel>
   <channel site="tataplay.com" site_id="431" lang="en" xmltv_id="OscarMoviesBhojpuri.in@SD">Oscar Movies Bhojpuri</channel>
-  <channel site="tataplay.com" site_id="1256" lang="en" xmltv_id="">Oye Music</channel>
-  <channel site="tataplay.com" site_id="940" lang="en" xmltv_id="">SIRIKANNADA Alltime</channel>
   <channel site="tataplay.com" site_id="1301" lang="en" xmltv_id="TataSky4K.in@SD">Tata Play 4K</channel>
   <channel site="tataplay.com" site_id="811" lang="en" xmltv_id="">Tata Play Adbhut Kahaniyan</channel>
   <channel site="tataplay.com" site_id="1363" lang="en" xmltv_id="">Tata Play Anime Local</channel>
@@ -27,17 +22,13 @@
   <channel site="tataplay.com" site_id="744" lang="en" xmltv_id="">Tata Play Comedy</channel>
   <channel site="tataplay.com" site_id="1489" lang="en" xmltv_id="">Tata Play Fancode Sports</channel>
   <channel site="tataplay.com" site_id="1786" lang="en" xmltv_id="">Tata Play Fancode Sports +1</channel>
-  <channel site="tataplay.com" site_id="1258" lang="en" xmltv_id="">Tata Play Filmy Safar</channel>
   <channel site="tataplay.com" site_id="789" lang="en" xmltv_id="">Tata Play Hollywood Local</channel>
   <channel site="tataplay.com" site_id="1167" lang="en" xmltv_id="">Tata Play Hollywood Local Tamil</channel>
   <channel site="tataplay.com" site_id="1168" lang="en" xmltv_id="">Tata Play Hollywood Local Telugu</channel>
   <channel site="tataplay.com" site_id="943" lang="en" xmltv_id="">Tata Play K-Dramas</channel>
-  <channel site="tataplay.com" site_id="737" lang="en" xmltv_id="">Tata Play Music</channel>
   <channel site="tataplay.com" site_id="959" lang="en" xmltv_id="">Tata Play Romance</channel>
   <channel site="tataplay.com" site_id="677" lang="en" xmltv_id="TataSkyShortsTV.in@SD">Tata Play ShortsTV</channel>
   <channel site="tataplay.com" site_id="1003" lang="en" xmltv_id="">Tata Play South Talkies</channel>
   <channel site="tataplay.com" site_id="1390" lang="en" xmltv_id="">Tata Play Superhits Serials</channel>
-  <channel site="tataplay.com" site_id="666" lang="en" xmltv_id="">Tata Play Theatre HD</channel>
   <channel site="tataplay.com" site_id="986" lang="en" xmltv_id="">Tata Play Zindagi</channel>
-  <channel site="tataplay.com" site_id="444" lang="en" xmltv_id="TravelxpTamil.in@SD">Travelxp Tamil</channel>
 </channels>

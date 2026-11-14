@@ -14,7 +14,7 @@ on:
       max_connections:
         description: 'Concurrent connections limit'
         required: false
-        default: '5'
+        default: '10'
       delay:
         description: 'Delay between requests (ms)'
         required: false
