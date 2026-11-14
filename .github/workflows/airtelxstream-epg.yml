@@ -1,4 +1,4 @@
-name: Generate Airtel Xstream EPG
+name: Generate Airtel Xstream & JioTV EPG
 
 on:
   schedule:
@@ -36,12 +36,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Grab Airtel Xstream EPG
+      - name: Grab Airtel Xstream & JioTV EPG
         run: |
           DAYS="${{ github.event.inputs.days || '2' }}"
           MAX_CONN="${{ github.event.inputs.max_connections || '10' }}"
-          echo "Grabbing EPG for airtelxstream.in (days: $DAYS, maxConnections: $MAX_CONN)..."
-          npm run grab --- --sites=airtelxstream.in --days=$DAYS --maxConnections=$MAX_CONN --gzip --output=guide.xml
+          echo "Grabbing EPG for airtelxstream.in and jiotv.com (days: $DAYS, maxConnections: $MAX_CONN)..."
+          npm run grab --- --sites=airtelxstream.in,jiotv.com --days=$DAYS --maxConnections=$MAX_CONN --gzip --output=guide.xml
 
       - name: Commit and push EPG output
         run: |
@@ -54,7 +54,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in EPG files."
           else
-            git commit -m "Update Airtel Xstream EPG [skip ci]"
+            git commit -m "Update Airtel Xstream & JioTV EPG [skip ci]"
             git push origin HEAD:${{ github.ref_name }}
           fi
 
@@ -62,7 +62,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: airtelxstream-epg
+          name: airtelxstream-jiotv-epg
           path: |
             guide.xml
             guide.xml.gz
