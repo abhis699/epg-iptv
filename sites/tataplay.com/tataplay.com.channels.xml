@@ -19,7 +19,6 @@
   <channel site="tataplay.com" site_id="282" lang="en" xmltv_id="AngelTV.gh@SD">Angel TV</channel>
   <channel site="tataplay.com" site_id="180" lang="en" xmltv_id="AnjanTV.in@SD">Anjan TV</channel>
   <channel site="tataplay.com" site_id="286" lang="en" xmltv_id="APN.in@SD">APN News</channel>
-  <channel site="tataplay.com" site_id="555" lang="en" xmltv_id="AsianetSuvarnaNews.in@SD">Asianet Suvarna News</channel>
   <channel site="tataplay.com" site_id="960" lang="en" xmltv_id="">Atmadarshan</channel>
   <channel site="tataplay.com" site_id="935" lang="en" xmltv_id="AwakeningTV.in@SD">Awakening</channel>
   <channel site="tataplay.com" site_id="660" lang="en" xmltv_id="AyushTV.in@SD">Ayush TV</channel>
@@ -37,7 +36,6 @@
   <channel site="tataplay.com" site_id="157" lang="en" xmltv_id="">Channel News Asia</channel>
   <channel site="tataplay.com" site_id="1166" lang="en" xmltv_id="Chithiram.in@SD">CHITHIRAM</channel>
   <channel site="tataplay.com" site_id="311" lang="en" xmltv_id="CTVNAKDPlus.in@SD">CTVN AKD Plus</channel>
-  <channel site="tataplay.com" site_id="1754" lang="en" xmltv_id="">Dagdusheth Pune</channel>
   <channel site="tataplay.com" site_id="1078" lang="en" xmltv_id="">Daily Post Punjab Haryana Himachal</channel>
   <channel site="tataplay.com" site_id="1216" lang="en" xmltv_id="DDChhattisgarh.in@SD">DD Chhattisgarh</channel>
   <channel site="tataplay.com" site_id="1215" lang="en" xmltv_id="DDGoa.in@SD">DD Goa</channel>
@@ -107,26 +105,20 @@
   <channel site="tataplay.com" site_id="1253" lang="en" xmltv_id="">Jeewan Bhakti</channel>
   <channel site="tataplay.com" site_id="373" lang="en" xmltv_id="JinvaniChannel.in@SD">Jinvani Channel</channel>
   <channel site="tataplay.com" site_id="377" lang="en" xmltv_id="KappaTV.in@SD">Kappa TV</channel>
-  <channel site="tataplay.com" site_id="849" lang="en" xmltv_id="">Kashi Vishwanath Temple, Varanasi</channel>
   <channel site="tataplay.com" site_id="838" lang="en" xmltv_id="KashishNews.in@SD">Kashish News</channel>
   <channel site="tataplay.com" site_id="1334" lang="en" xmltv_id="">KBC News</channel>
   <channel site="tataplay.com" site_id="384" lang="en" xmltv_id="">Khabarain Abhi Tak</channel>
   <channel site="tataplay.com" site_id="1035" lang="en" xmltv_id="">Khandoba Temple, Jejuri</channel>
   <channel site="tataplay.com" site_id="1789" lang="en" xmltv_id="">KM News</channel>
   <channel site="tataplay.com" site_id="381" lang="en" xmltv_id="KolkataTV.in@SD">Kolkata TV</channel>
-  <channel site="tataplay.com" site_id="944" lang="en" xmltv_id="">Live Iskcon Vrindavan</channel>
-  <channel site="tataplay.com" site_id="948" lang="en" xmltv_id="">Live Naina Devi Himachal Pradesh</channel>
-  <channel site="tataplay.com" site_id="947" lang="en" xmltv_id="">Live Patna Sahib Patna</channel>
   <channel site="tataplay.com" site_id="1206" lang="en" xmltv_id="">LNI</channel>
   <channel site="tataplay.com" site_id="1205" lang="en" xmltv_id="">Lokmanch</channel>
-  <channel site="tataplay.com" site_id="1004" lang="en" xmltv_id="">Mahavir Temple, Patna.</channel>
   <channel site="tataplay.com" site_id="1870" lang="en" xmltv_id="">Mahotsav TV</channel>
   <channel site="tataplay.com" site_id="391" lang="en" xmltv_id="MalaiMurasuTV.in@SD">MalaiMurasu Seithigal</channel>
   <channel site="tataplay.com" site_id="965" lang="en" xmltv_id="ManoranjanGrand.in@SD">Manoranjan Grand</channel>
   <channel site="tataplay.com" site_id="1070" lang="en" xmltv_id="">MEDIA 9</channel>
   <channel site="tataplay.com" site_id="1818" lang="en" xmltv_id="">Mirror Media</channel>
   <channel site="tataplay.com" site_id="406" lang="en" xmltv_id="MTV.in@HD">MTV HD</channel>
-  <channel site="tataplay.com" site_id="1008" lang="en" xmltv_id="">Naga Sai Temple</channel>
   <channel site="tataplay.com" site_id="782" lang="en" xmltv_id="">Namma TV</channel>
   <channel site="tataplay.com" site_id="805" lang="en" xmltv_id="NandighoshaTV.in@SD">Nandighosha TV</channel>
   <channel site="tataplay.com" site_id="1827" lang="en" xmltv_id="">Nation Update</channel>
@@ -193,13 +185,11 @@
   <channel site="tataplay.com" site_id="911" lang="en" xmltv_id="">Santwani</channel>
   <channel site="tataplay.com" site_id="385" lang="en" xmltv_id="">Sharnam TV</channel>
   <channel site="tataplay.com" site_id="1313" lang="en" xmltv_id="ShekinahTV.in@SD">SHEKINAH</channel>
-  <channel site="tataplay.com" site_id="840" lang="en" xmltv_id="">Shirdi Sai Baba</channel>
   <channel site="tataplay.com" site_id="1171" lang="en" xmltv_id="">Shree Ichchhapuran Balaji Mandir</channel>
   <channel site="tataplay.com" site_id="1865" lang="en" xmltv_id="">Shree Sanatan TV</channel>
   <channel site="tataplay.com" site_id="1007" lang="en" xmltv_id="">Shri Ashtavinayak Mahaganpati, Ranjangaon</channel>
   <channel site="tataplay.com" site_id="940" lang="en" xmltv_id="">SIRIKANNADA Alltime</channel>
   <channel site="tataplay.com" site_id="1797" lang="en" xmltv_id="">Smriti Patra</channel>
-  <channel site="tataplay.com" site_id="842" lang="en" xmltv_id="">Somnath Temple</channel>
   <channel site="tataplay.com" site_id="477" lang="en" xmltv_id="SankaraTV.in@SD">Sri Sankara TV</channel>
   <channel site="tataplay.com" site_id="1337" lang="en" xmltv_id="">Sristi TV</channel>
   <channel site="tataplay.com" site_id="989" lang="en" xmltv_id="">STV Haryana News</channel>
@@ -290,7 +280,4 @@
   <channel site="tataplay.com" site_id="500" lang="en" xmltv_id="Vedic.in@SD">Vedic</channel>
   <channel site="tataplay.com" site_id="659" lang="en" xmltv_id="VendharTV.in@SD">Vendhar TV</channel>
   <channel site="tataplay.com" site_id="1796" lang="en" xmltv_id="">Voice TV Urdu</channel>
-  <channel site="tataplay.com" site_id="1287" lang="en" xmltv_id="ZeeKannadaNews.in@SD">Zee Kannada News</channel>
-  <channel site="tataplay.com" site_id="1497" lang="en" xmltv_id="ZeeNews.in@HD">Zee News HD</channel>
-  <channel site="tataplay.com" site_id="1288" lang="en" xmltv_id="ZeeTeluguNews.in@SD">Zee Telugu News</channel>
 </channels>
