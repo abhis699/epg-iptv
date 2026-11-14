@@ -1,4 +1,4 @@
-name: Generate Airtel Xstream & Tata Play EPG
+name: Generate Indian EPG (Airtel, Tata Play & Zee5)
 
 on:
   schedule:
@@ -10,11 +10,15 @@ on:
       days:
         description: 'Number of days to grab EPG for'
         required: false
-        default: '2'
+        default: '1'
       max_connections:
         description: 'Concurrent connections limit'
         required: false
-        default: '10'
+        default: '5'
+      delay:
+        description: 'Delay between requests (ms)'
+        required: false
+        default: '100'
 
 # Permissions required to commit and push back to repository
 permissions:
@@ -36,12 +40,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Grab Airtel Xstream & Tata Play EPG
+      - name: Grab Indian EPG (Airtel, Tata Play & Zee5)
         run: |
-          DAYS="${{ github.event.inputs.days || '2' }}"
-          MAX_CONN="${{ github.event.inputs.max_connections || '10' }}"
-          echo "Grabbing EPG for airtelxstream.in and tataplay.com (days: $DAYS, maxConnections: $MAX_CONN)..."
-          npm run grab --- --sites=airtelxstream.in,tataplay.com --days=$DAYS --maxConnections=$MAX_CONN --gzip --output=guide.xml
+          DAYS="${{ github.event.inputs.days || '1' }}"
+          MAX_CONN="${{ github.event.inputs.max_connections || '5' }}"
+          DELAY="${{ github.event.inputs.delay || '100' }}"
+          echo "Grabbing EPG for airtelxstream.in, tataplay.com, and zee5.com (days: $DAYS, maxConnections: $MAX_CONN, delay: ${DELAY}ms)..."
+          npm run grab --- --sites=airtelxstream.in,tataplay.com,zee5.com --days=$DAYS --maxConnections=$MAX_CONN --delay=$DELAY --gzip --output=guide.xml
 
       - name: Commit and push EPG output
         run: |
@@ -54,7 +59,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in EPG files."
           else
-            git commit -m "Update Airtel Xstream & Tata Play EPG [skip ci]"
+            git commit -m "Update Indian EPG (Airtel, Tata Play & Zee5) [skip ci]"
             git push origin HEAD:${{ github.ref_name }}
           fi
 
@@ -62,7 +67,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: airtelxstream-tataplay-epg
+          name: india-epg
           path: |
             guide.xml
             guide.xml.gz
